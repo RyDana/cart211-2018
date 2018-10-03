@@ -1,0 +1,219 @@
+body {
+    margin: 0;
+    font-size: 100%; /*allows us to control the font size zoom-ins and zoom-outs in old IE*/ 
+    background-color: #fafafa;
+    font-family: 'Roboto Mono', monospace;
+}
+
+h1, li{
+    font-family: 'Dosis', sans-serif;
+}
+
+.websitetitle {
+    background-color: black;
+    height: 60px;
+    padding: 10px;
+    margin: 0px;
+    box-sizing: border-box;
+    color: white;
+    border-bottom: thick solid white;
+    
+    /*sticky */
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+}
+
+
+.websitetitle h1{
+    margin: 0;
+    display: inline-block;
+}
+
+
+/* top nav bar*/
+ul.topnav {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    float:right;
+}
+
+ul.topnav li{
+    display: inline-block;
+}
+
+ul.topnav li a {
+    display: inline-block;
+    color: #aaa;
+    text-align: center;
+    padding: 8px 16px;
+    text-decoration: none;
+
+}
+
+ul.topnav li a:hover:not(.active) {
+    border-bottom: solid #aaaaaa;
+/*    background-color: #111;*/
+}
+
+ul.topnav li a.active {
+    border-bottom: solid #fff;
+    color: white;
+}
+
+
+/*bio*/
+body.bio{
+    background-color: black;
+}
+div.bioText{
+    width: 70%;
+    color: white;
+    padding: 20px;
+    margin: 0;
+    float: right;
+    display: inline-block;
+    box-sizing: border-box;
+}
+img.faceImage{
+    padding: 20px;
+    margin: 0;
+    width: 30%;
+    border-radius: 50%;
+    float: left;
+    box-sizing: border-box;
+}
+div.bio{
+    margin: 10% 10%;
+    overflow: auto;
+}
+
+
+
+/*side nav bar*/
+div.sidenav{
+    width: 180px;
+    background-color: #fafafa;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    position: fixed;
+    overflow:auto;
+    
+}
+
+ul.sidenav {
+    list-style-type: none;
+    margin: 50% 10px;
+    padding: 0;
+    border-right: solid thin black;
+
+}
+
+ul.sidenav li{
+    margin: 20px;
+    border-left: solid black;
+}
+
+ul.sidenav li a {
+    display: inline-block;
+    color: #444;
+    text-align: center;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+/*reading responses*/
+article{
+    margin-left: 200px;
+    margin-right: 150px;
+}
+
+@media only screen and (max-width: 700px) {
+    /*top nav*/
+    div.websitetitle {
+        height: 110px;
+    }
+    .websitetitle h1{
+        margin: 0;
+        width: 100%;
+        border-bottom: thick solid white;
+        display: inline-block;
+    }
+    
+    ul.topnav {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        background-color: black;
+        display: inline-block;
+        float:right;
+    }
+    
+    /*bio*/  
+    div.bioText {
+        padding: 5%;
+        margin: 0;
+        float: none;
+        width: 100%;
+    }
+    img.faceImage{
+        width: 100%;
+        border-radius: 50%;
+    }
+
+    div.bio{
+        margin: 20px 10%;
+    }
+
+    
+    /*side nav*/
+    div.sidenav{
+        height: 40px;
+        width: 100%;
+        border-bottom: thin solid black;
+        box-sizing: border-box;
+
+
+        /*sticky */
+        position: -webkit-sticky; /* Safari */
+        position: sticky;
+        top: 110px;
+    
+    }
+
+    ul.sidenav {
+        display: inline-block;
+        border: none;
+        
+        padding: 0;
+        margin: 0 10px;
+
+    }
+
+    ul.sidenav li{
+        display: inline-block;
+        margin: 0px;
+    }
+
+    ul.sidenav li a {
+        display: inline-block;
+        color: #444;
+        text-align: center;
+        padding: 8px 10px;
+        text-decoration: none;
+    }
+    
+    
+    /*reading responses*/
+    article {
+        margin: 0 30px;
+
+    }
+}
+
+
+
+
+
