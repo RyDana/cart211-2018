@@ -1,12 +1,17 @@
 body {
     margin: 0;
-    font-size: 100%; /*allows us to control the font size zoom-ins and zoom-outs in old IE*/ 
+    font-size: 100%; /*allows us to control the font size zoom-ins and zoom-outs in old IE*/
     background-color: #fafafa;
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'Roboto', sans-serif;
 }
 
 h1, li{
     font-family: 'Dosis', sans-serif;
+}
+
+p {
+    text-indent: 50px;
+    line-height: 1.5;
 }
 
 .websitetitle {
@@ -17,7 +22,7 @@ h1, li{
     box-sizing: border-box;
     color: white;
     border-bottom: thick solid white;
-    
+
     /*sticky */
     position: -webkit-sticky; /* Safari */
     position: sticky;
@@ -100,7 +105,7 @@ div.sidenav{
     height: 100%;
     position: fixed;
     overflow:auto;
-    
+
 }
 
 ul.sidenav {
@@ -141,7 +146,7 @@ article{
         border-bottom: thick solid white;
         display: inline-block;
     }
-    
+
     ul.topnav {
         margin: 0;
         padding: 0;
@@ -150,8 +155,8 @@ article{
         display: inline-block;
         float:right;
     }
-    
-    /*bio*/  
+
+    /*bio*/
     div.bioText {
         padding: 5%;
         margin: 0;
@@ -167,7 +172,7 @@ article{
         margin: 20px 10%;
     }
 
-    
+
     /*side nav*/
     div.sidenav{
         height: 40px;
@@ -180,13 +185,13 @@ article{
         position: -webkit-sticky; /* Safari */
         position: sticky;
         top: 110px;
-    
+
     }
 
     ul.sidenav {
         display: inline-block;
         border: none;
-        
+
         padding: 0;
         margin: 0 10px;
 
@@ -204,16 +209,11 @@ article{
         padding: 8px 10px;
         text-decoration: none;
     }
-    
-    
+
+
     /*reading responses*/
     article {
         margin: 0 30px;
 
     }
 }
-
-
-
-
-
