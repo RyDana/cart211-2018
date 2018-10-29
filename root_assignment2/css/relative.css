@@ -1,0 +1,41 @@
+	/* === RELATIVE POSITION EXAMPLE === */
+/*
+div {
+	background-color: beige;
+	width:50%;
+*/
+/*	to center a block element horizontally */
+/*	margin:0 auto;*/
+/*	if the parent is relative, absolute children stay inside of it */
+/*
+	position: relative;
+}
+*/
+/*
+section {
+	width:100px;
+	height: 100px;
+	background-color: #333;
+	margin:20px;
+	display:inline-block;
+}
+*/
+
+/* classes can be applied to mutiple objects */
+/*
+.rel {
+	background-color:tomato;
+	position:relative;
+	left:50px;
+	top:50px;
+}
+*/
+
+/* ids can only be applied to one element per page */
+/*
+#abso {
+	background-color: crimson;
+	position:absolute;
+	bottom:-40px;
+	right:-40px;
+}*/
