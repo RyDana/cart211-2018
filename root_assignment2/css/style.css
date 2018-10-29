@@ -22,7 +22,7 @@ html, body {
 }
 
 #s1 hgroup {
-	background:#fff;
+	background:#fafafa;
 	width:50%;
     height: 300px;
 	padding:20px;
@@ -68,7 +68,7 @@ ul.topnav li{
 
 ul.topnav li a {
     display: inline-block;
-    color: #333;
+    color: lightpink;
     text-align: center;
     padding: 8px 30px;
     text-decoration: none;
@@ -76,7 +76,7 @@ ul.topnav li a {
 }
 
 ul.topnav li a:hover:not(.active) {
-    border-bottom: solid #333;
+    border-bottom: solid lightpink;
 }
 
 ul.topnav li a.active {
@@ -96,60 +96,23 @@ ul.topnav li a.active {
 }
 
 #s2 h2 {
-    padding: 50px 0px;
+    padding: 30px 0px;
     color: crimson;
     font-family: 'VT323', monospace;
     font-size: 50px;
+}
+
+#s2 p {
+    margin: 10px 0px;
 }
 
 #s2 img {
     max-width: 100%;
 }
 
-/*
-
-#s3 {
-	background: url(../images/bg2.jpg) no-repeat fixed center center;
-	background-size: cover;
-	width:100%;
-	height: 100%;
-	position:relative;
+#s2 article:first-child p{
+    text-indent: 3em;
 }
-
-#s3 article {
-	background:#fff;
-	width:35%;
-	padding:20px;
-	text-align: right;
-	position: absolute;
-	bottom:50px;
-	left:50px;
-}
-
-
-#s4 {
-	background: url(../images/bg.jpg) no-repeat fixed center center;
-	background-size: cover;
-	width:100%;
-	min-height: 50%;
-	height: auto;
-	display: flex;
-  	flex-wrap: wrap;
-  	align-items: center;
-}
-
-figure {
-	background: tomato;
-	margin:20px;
-	width:200px;
-	height:200px;
-	  flex-grow: 1;
-}
-
-.bigger {
-	flex-grow: 3;
-}
-*/
 
 
 
