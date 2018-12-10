@@ -1,0 +1,33 @@
+/* === CSS RESET === */
+* {
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html, body {
+	height:100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*== NAVIGATION BAR==*/
+.navbar{
+    position:fixed;
+    width:100%;
+    z-index:1;
+    top: 0;
+
+}
+
+#master-container{
+	width:100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+#vg-container{
+    margin-top:100px;
+}

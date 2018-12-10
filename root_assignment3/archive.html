@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Archive</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="css/style-archive.css">
+    
+</head>
+<body>
+       <!-- Navigation -->
+    <nav class="navbar navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand text-primary" href="#">VGArchive</a>
+        <form class="search form-inline" action="">
+          <input type="text" id='query1' class="form-control" placeholder="Search games.." name="search" maxlength="30" id='query'>
+          <button type="button" onClick="searchGames('query1')" class="btn btn-primary">Search!</button>
+        </form>
+<!--        <a class="btn btn-primary" href="#">Sign In</a>-->
+      </div>
+    </nav>
+    
+      <!-- Sidebar -->
+      <ul class="sidebar navbar-nav bg-light">
+        <li class="nav-item active">
+        </li>
+        <li class="nav-item">
+        </li>
+        <li class="nav-item">
+        </li>
+        <li class="nav-item">
+        </li>
+      </ul>
+    
+           
+        <!-- Page Content -->
+    <div id="page-content-wrapper">
+        <div class="container-fluid">
+                <!-- Masthead -->
+            <header class="masthead text-center" id='master-container'>
+              <div class="container">
+                <div class="row">
+                  <div class="col-9 mx-auto">
+                   <h1 class="mb-5 text-primary">VGArchive</h1>
+                    <h2 class="mb-5 text-secondary">Find and loan thousands of retro video games!</h2>
+                  </div>
+                  <div class="col-7 mx-auto">
+                    <form>
+                      <div class="form-row">
+                        <div class="col-9">
+                          <input type="text" id='query2' class="form-control form-control-lg" placeholder="Search games...">
+                        </div>
+                        <div class="col-3">
+                          <button type="button" class="btn btn-block btn-lg btn-primary" onClick="searchGames('query2')">Search!</button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </header>
+
+
+
+            <!-- videogames container -->
+            <div id="vg-container" class="row"></div>
+        </div>
+    </div>
+
+
+    
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    
+    <!--custom JavaScript-->
+    <script src="js/js-archive.js"></script>
+    
+</body>
+</html>

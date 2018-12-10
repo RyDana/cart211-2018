@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gamecollection>
+	<game category="snes">
+		<title lang="en">Super Mario World</title>
+		<develloper>Nintendo</develloper>
+		<publisher>Nintendo</publisher>
+		<genres>
+		    <genre>Platform </genre>
+		</genres>
+		<year>1991</year>
+		<price>9.99</price>
+        <description>Mario’s off on his biggest adventure ever, and this time he’s brought along a friend. Yoshi the dinosaur teams up with Mario to battle Bowser, who has kidnapped Princess Toadstool once again. Guide Mario and Yoshi through nine peril-filled worlds to the final showdown in Bowser’s castle. Use Mario’s new powers and Yoshi’s voracious monster-gobbling appetite as you explore 96 levels filled with dangerous new monsters and traps. Climb mountains and cross rivers, and descend into subterranean depths. Destroy the seven Koopa castles and find keys to gain entrance to hidden levels. Discover more warps and thrilling bonus worlds than ever before! Mario’s back, and this time he’s better than ever!</description>
+        <picture>images/super-mario-world.jpg</picture>
+	</game>
+    <game category="snes">
+		<title lang="en">Super Metroid</title>
+		<develloper>Intelligent Systems Co., Ltd.</develloper>
+		<publisher>Nintendo</publisher>
+        <genres>
+		    <genre>Action</genre>
+		    <genre>Adventure</genre>
+		</genres>
+		<year>1994</year>
+		<price>9.99</price>
+        <description>Take on a legion of Space Pirates and a new Metroid force as you forge into the covert underworld of Planet Zebes! It’s up to you and Samus to recapture the long-surviving Metroid hatchling before evil hands unleash its energy. An army of ominous creatures are poised for battle at every turn of Zebes’ twisted, threatening passageways… including the menacing Ridley and the great lizard Kraid. Knock down enemies with a killer somersault and swing on an electric beam through narrow passageways! They’re no match for you and Samus… but wait! It seems the Mother Brain has returned…</description>
+        <picture>images/super-metroid.jpg</picture>
+	</game>
+    <game category="snes">
+		<title lang="en">Legend of Zelda: A link to the past</title>
+		<develloper>Nintendo EAD</develloper>
+		<publisher>Nintendo</publisher>
+        <genres>
+		    <genre>Action</genre>
+		    <genre>Adventure</genre>
+		    <genre>Role-Playing</genre>
+		</genres>
+		<year>1992</year>
+		<price>9.99</price>
+        <description>Venture back to Hyrule and an age of magic and heroes. The predecessors of Link and Zelda face monsters on the march when a menacing magician takes over the kingdom. Only you can prevent his evil plot from shattering the land of Hyrule. In your quest, you’ll venture into twisting mazes, dungeons, palaces and shadowy forests. Test your mettle with mighty swords and magical weapons. Or heft a boulder and hurl it at your enemies. If the going gets tough, dive into a river--you can swing to escape! Learn powerful spells, locate magical artifacts and solve the mysteries of the evil magician and the hidden realm of Hyrule. This exciting Super NES sequel to the Legend of Zelda and The Adventure of Link uses 16-bit power to create a quest so colorful and detailed you don’t just play it, you live it!</description>
+        <picture>images/legend-of-zelda-past.jpg</picture>
+	</game>
+	
+    <game category="nes">
+		<title lang="en">Mario Bros</title>
+		<develloper>Nintendo</develloper>
+		<publisher>Nintendo</publisher>
+        <genres>
+		    <genre>Action</genre>
+		    <genre>Platform </genre>
+		</genres>
+		<year>1986</year>
+		<price>9.99</price>
+        <description>Mario and Luigi are doing some underground plumbing when all sorts of weird creatures come flying out of the pipes. Turtles, crabs - even fighterflies - attack the helpless Mario Bros. It's up to you to kick, punch, and knock out these sewer pests before time runs out! But beware. Just when you think you got rid of them, they come back for more! Play against the computer, or with a friend - either way, this is one underground classic you'll want to play time and time again!</description>
+        <picture>images/mario-bros.jpg</picture>
+	</game>
+    <game category="nes">
+		<title lang="en">Contra</title>
+		<develloper>Konami</develloper>
+		<publisher>Konami</publisher>
+        <genres>
+		    <genre>Action</genre>
+		    <genre>Platform </genre>
+		    <genre>Shooter</genre>
+		</genres>
+		<year>1988</year>
+		<price>9.99</price>
+        <description>The universe teeters on the brink of total annihilation at the hands of the vile alien warmonger, Red Falcon. Earth's only hope rests with you, a courageous member of the Special Forces elite commando squad. Your mission: Battle deep into the deadly Amazon jungle, where the Red Falcon and his galactic henchmen have transformed ancient Mayan temples into awesome monuments dedicated to mass destruction. A multitude of weapons, from rapid-fire machine guns to high-tech lasers are at your disposal as you sweat blood, fighting past 3-D mazes, underground security systems, and tropical forests surrounded by giant waterfalls and alien cannons. This is the ultimate test for the ultimate guerilla warrior. And if you survive, Earth survives!</description>
+        <picture>images/contra.jpg</picture>
+	</game>
+    <game category="nes">
+		<title lang="en">Punch-Out!!</title>
+		<develloper>Nintendo</develloper>
+		<publisher>Nintendo</publisher>
+        <genres>
+		    <genre>Sports</genre>
+		</genres>
+		<year>1990</year>
+		<price>9.99</price>
+        <description>Punch-Out!! It's 13 tough matches in the minor, major and world circuits that lead to the final challenge - the World Video Boxing Association title fight. The ultimate bout against the newest WVBA Champ - Mr. Dream! Practice your hook and take a quick jab. Try to stay light on your feet as you dance left, then right, dodging punches while you throw your own. Boxers from around the world like Piston Honda, Glass Joe and Super Macho Man are all trying to knock you out of the ring. You've trained for months for this moment. There's the bell. Shake hands and come out boxing!</description>
+        <picture>images/punch-out.jpg</picture>
+	</game>
+   
+    <game category="gameboy-color">
+		<title lang="en">Pokémon Gold</title>
+		<develloper>Game Freak</develloper>
+		<publisher>Nintendo</publisher>
+        <genres>
+		    <genre>Adventure</genre>
+		    <genre>Role-Playing</genre>
+		</genres>
+		<year>1999</year>
+		<price>9.99</price>
+        <description>Enter a whole new world, with new Pokémon to capture, train and battle! Meet Professor Elm and get the all-new Poké Gear, including map, radio, cell phone and clock. Set the clock then watch as day turns to night and events take place in real time—and be sure to keep an eye out for Pokémon that come out only at night! • Dozens of never-before-seen Pokémon! Find new evolutions for some familiar Pokémon and discover whole new species. Your Pokédex will even reveal genders of some Pokémon. • A whole new world! Explore Johto, where there are new gym leaders to beat and eight new badges to earn. • Two new types! Introducing Dark and Steel-type Pokémon. • Trade with Silver, Red, Blue, and Yellow versions to catch ‘em all</description>
+        <picture>images/pokemon-gold.jpg</picture>
+	</game>
+    <game category="gameboy-color">
+		<title lang="en">The Legend of Zelda: Oracle of Ages</title>
+		<develloper>Nintendo</develloper>
+		<publisher>Nintendo</publisher>
+        <genres>
+            <genre>Action</genre>
+		    <genre>Adventure</genre>
+		    <genre>Role-Playing</genre>
+		</genres>
+		<year>2001</year>
+		<price>9.99</price>
+        <description>A Hero for the Ages A pall of darkness has fallen over the land of Labrynna. The Sorceress of Shadows, Veran, has captured the Oracle of Ages and is using her power for the ways of evil. But hope is not lost... yet. Link has been summoned to Labrynna by the Triforce, and he’ll need to bend the very fabric of time to save the Oracle. And he must hurry, for time is running out... • Play the Harp of Ages! Travel through time to affect events in both past and present! • Use tons of items! Link will master new items like Mystical Seeds and over 60 Magical Rings as well as classic tools like the Boomerang and Roc’s Feather. • Link gets reinforcements! Fly, swim and jump to new heights with all-new characters like Moosh the winged bear, Ricky the marsupial, and Dimitri the Dodongo! • Link with The Legend of Zelda: Oracle of Seasons! Friends and enemies will travel between the two games, passwords can upgrade or transport items, and only by linking can you discover the evil force behind the chaos</description>
+        <picture>images/legend-of-zelda-ages.png</picture>
+	</game>
+    <game category="gameboy-color">
+		<title lang="en">Wario Land II</title>
+		<develloper>Nintendo</develloper>
+		<publisher>Nintendo</publisher>
+        <genres>
+            <genre>Puzzle</genre>
+		    <genre>Platform</genre>
+		</genres>
+		<year>1999</year>
+		<price>9.99</price>
+        <description>What kind of no-good ruffians would break into my castle and steal my treasures?! It's that rotten Captain Syrup and that Black Sugar Gang! I'm looking out for bad guys and scavenging for coins as I track down my treasures. If I don't get them all the first time, that's OK. I can go back again and again until I find them all. Captain Syrup doesn't stand a chance against me!</description>
+        <picture>images/wario-land-2.png</picture>
+	</game>
+	
+    <game category="atari-2600">
+		<title lang="en">Pitfall!</title>
+		<develloper>Activision</develloper>
+		<publisher>Activision</publisher>
+        <genres>
+            <genre>Action</genre>
+		</genres>
+		<year>1982</year>
+		<price>2.99</price>
+        <description>Let me introduce myself. I'm Pitfall Harry, veteran jungle explorer. Fortune hunting's my game, and yours, too, if you're daring enough to take this trip with me. Don't be nervous; I'll be your guide through the jungle, and I'm one of the best. Untold riches are waiting for us in there, but so are dangers a dozen times over. We'll be swinging on vines over bottomless tarpits. We'll be hopping across swamps, using crocodile heads like stepping stones. We'll be searching underground through dark passageways crawling with killer scorpions. So pack up your backpack and meet me at the jungle at dawn - and we'll be off to seek a king's ransom in gold, diamonds and lost treasures - in Pitfall Harry's Jungle Adventure</description>
+        <picture>images/pitfall.jpg</picture>
+	</game>
+    <game category="atari-2600">
+		<title lang="en">PacMan</title>
+		<develloper>Atari</develloper>
+		<publisher>Atari</publisher>
+        <genres>
+            <genre>Puzzle</genre>
+		</genres>
+		<year>1982</year>
+		<price>2.99</price>
+        <description>It's your job to keep PAC-MAN as happy as possible. You must guide him around the maze so that he can eat video wafers and power pills. Protect him from the ghosts unless he has the super strength of a power pill. If he does have the super strength, help him chase the ghosts and gobble them up before they gobble him.</description>
+        <picture>images/pacman.jpg</picture>
+	</game>
+    <game category="atari-2600">
+		<title lang="en">PacMan</title>
+		<develloper>Taito Corporation</develloper>
+		<publisher>Bally Mfg. Corp.</publisher>
+        <genres>
+            <genre>Shooter</genre>
+		</genres>
+		<year>1978</year>
+		<price>2.99</price>
+        <description>Space Invaders is a game in which the player controls a laser cannon by moving it horizontally across the bottom of the screen and firing at descending aliens. The aim is to defeat five rows of eleven aliens—some versions feature different numbers—that move horizontally back and forth across the screen as they advance towards the bottom of the screen. The player defeats an alien, and earns points, by shooting it with the laser cannon. As more aliens are defeated, the aliens' movement and the game's music both speed up</description>
+        <picture>images/space-invaders.jpg</picture>
+	</game>
+	
+    <game category="playstation">
+		<title lang="en">Final Fantasy VII</title>
+		<develloper>Squaresoft</develloper>
+		<publisher>Squaresoft</publisher>
+        <genres>
+            <genre>Role-Playing</genre>
+		</genres>
+		<year>1997</year>
+		<price>2.99</price>
+        <description>Set in a dystopian world, Final Fantasy VII's story centers on mercenary Cloud Strife who joins with several others to stop the megacorporation Shinra, which is draining the life of the planet to use as an energy source. As the story progresses, the situation escalates and Cloud and his allies face Sephiroth, the game's main antagonist.</description>
+        <picture>images/final-fantasy.jpg</picture>
+	</game>
+    <game category="playstation">
+		<title lang="en">Metal Gear Solid</title>
+		<develloper>Konami</develloper>
+		<publisher>Konami</publisher>
+        <genres>
+            <genre>Action</genre>
+		</genres>
+		<year>1998</year>
+		<price>2.99</price>
+        <description>Metal Gear Solid follows Solid Snake, a soldier who infiltrates a nuclear weapons facility to neutralize the terrorist threat from FOXHOUND, a renegade special forces unit. Snake must liberate two hostages, the head of DARPA and the president of a major arms manufacturer, confront the terrorists, and stop them from launching a nuclear strike.</description>
+        <picture>images/metal-gear-solid.jpg</picture>
+	</game>
+	
+    <game category="playstation-portable">
+		<title lang="en">Daxter</title>
+		<develloper>Ready at Dawn</develloper>
+		<publisher>Sony</publisher>
+        <genres>
+            <genre>Action</genre>
+            <genre>Platform</genre>
+		</genres>
+		<year>2006</year>
+		<price>2.99</price>
+        <description>Daxter is centered around the world of the lovable orange ottsel made popular in the Jak and Daxter franchise. The story unfolds as Daxter searches for Jak, who was imprisoned during the events that led to the start of "Jak II." Daxter, now on his own in an unfamiliar place, quickly realizes that being small and furry won't help his chances of survival. To help stamp out a mysterious metalbug infestation, Daxter takes on a job as a pest exterminator, enabling him to explore parts of Haven City in an effort to collect the clues that will lead him to Jak. Daxter allows gamers to play from his perspective offering a distinctive set of moves with agile abilities that allows players to climb walls, creep up on enemies, fit in small places and maneuver vehicles. Taking a job as a pest exterminator, to fight an ongoing invasion of metal-bugs, Daxter comes equip with gadgets to rid the city of these metal nuisances. Get close up and personal by using your flimsy bug swatter to squash an army of attacking insects or your spray gun to hover around a variety of environments while picking up various upgrades.</description>
+        <picture>images/daxter.jpg</picture>
+	</game>
+    <game category="playstation-portable">
+		<title lang="en">God of War: Chains of Olympus</title>
+		<develloper>Ready at Dawn</develloper>
+		<publisher>Sony</publisher>
+        <genres>
+            <genre>Action</genre>
+            <genre>Adventure</genre>
+		</genres>
+		<year>2008</year>
+		<price>2.99</price>
+        <description>The game is set in Ancient Greece and loosely based on its mythology. The player controls Kratos, a Spartan warrior in the service of the Olympian Gods. Kratos is guided by the goddess Athena, who instructs him to find the Sun God Helios, as the Dream God Morpheus has caused the remaining gods to slumber in Helios' absence. With the power of the sun, Morpheus and Persephone, the Queen of the Underworld, with the aid of the Titan Atlas, intend to destroy the Pillar of the World and in turn Olympus. God of War: Chains of Olympus is chronologically the second chapter in the series, which focuses on vengeance as its central theme.</description>
+        <picture>images/god-of-war.jpg</picture>
+	</game>
+	
+    <game category="sega-dreamcast">
+		<title lang="en">Sonic Adventure</title>
+		<develloper>Sonic Team</develloper>
+		<publisher>Sega</publisher>
+        <genres>
+            <genre>Platform</genre>
+		</genres>
+		<year>1998</year>
+		<price>2.99</price>
+        <description>Centuries ago, the planet was bestowed the seven Chaos Emeralds. These emeralds were a source of unlimited power, and consequently it did not take long before wars broke out over who would control the Chaos Emeralds. There was also a Master Emerald, which was the controller of the Chaos Emeralds and could either negate or amplify the Chaos Emerald's power. One of the chao living near the shrine of the Emeralds accidentally made contact with the holy water in the shrine and mutated to become a peaceful creature that could use the power of water called Chaos and became the guardian of the rest of the chaos there. Later on, a tribe of echidnas, led by Pachamac, angered Chaos by attempting to steal the Chaos Emeralds, ruining the sanctuary it was protecting and attempted a mass massacre on the chao living there. They were all but completely destroyed within a single night and Chaos, in his fury, used the negative power of the Chaos Emeralds to transform into Perfect Chaos and slaughtered all the echidnas. Pachamac's daughter, Tikal, had pleaded with Pachamac but he refused to listen to her. Tikal then prayed to the Master Emerald after Perfect Chaos had left to destroy the entire world to seal herself with Chaos inside the Master Emerald.</description>
+        <picture>images/sonic-adventure.jpg</picture>
+	</game>
+    <game category="sega-dreamcast">
+		<title lang="en">Jet Grind Radio</title>
+		<develloper>Smilebit</develloper>
+		<publisher>Sega</publisher>
+        <genres>
+            <genre>Action</genre>
+		</genres>
+		<year>2000</year>
+		<price>2.99</price>
+        <description>Tokyo-to, a city not unlike Tokyo, somewhere in Asia, in the near future. This is the story about the GG's, one of three rival teenage gangs who ride motorised inline skates and are tagging the streets with graffiti. There is a turf war going on between the gangs GG's, the Poison Jam, and the high-tech freaks, the Noise Tanks. The evil Rokkaku Corporation has the corrupt police in their grasp, and, headed by Captain Onishima, the cops are hell-bent on subduing the unruly teen protagonists. But there is light in the darkness: the underground DJ, "Professor K," and his Jet Set Radio station keep tabs on what is happening on the streets of Tokyo-to, and soon our teens will have something much darker than the police to worry about.</description>
+        <picture>images/jetset-radio.jpg</picture>
+	</game>
+	
+    <game category="xbox">
+		<title lang="en">Halo: Combat Evolved</title>
+		<develloper>Bungie</develloper>
+		<publisher>Microsoft Studios</publisher>
+        <genres>
+            <genre>Shooter</genre>
+		</genres>
+		<year>2001</year>
+		<price>2.99</price>
+        <description>In Halo's twenty-sixth century setting, the player assumes the role of the Master Chief, a cybernetically enhanced super-soldier. The player is accompanied by Cortana, an artificial intelligence who occupies the Master Chief's neural interface. Players battle various aliens on foot and in vehicles as they attempt to uncover the secrets of the eponymous Halo, a ring-shaped artificial planet</description>
+        <picture>images/halo.jpg</picture>
+	</game>
+    <game category="xbox">
+		<title lang="en">Fallout: Brotherhood of Steel</title>
+		<develloper>Interplay Entertainment Corp.</develloper>
+		<publisher>Interplay Entertainment Corp.</publisher>
+        <genres>
+            <genre>Action</genre>
+            <genre>Role-Playing</genre>
+		</genres>
+		<year>2004</year>
+		<price>2.99</price>
+        <description>Brotherhood of Steel is an action game set in the Fallout universe. The Brotherhood members are well armed and carry full clips of ammo (which does run out). New weapons of various nature can be found and equipped to bring new tactics. Shooting down enemies earns experience points and these points are used to improve the attributes of various individual skills. Additionally, your character will have to content with finding keys and other objects, protecting NPCs and jumping over bottomless pits.</description>
+        <picture>images/fallout.jpg</picture>
+	</game>
+	
+    <game category="commodore-64">
+		<title lang="en">Impossible Mission</title>
+		<develloper>Epyx</develloper>
+		<publisher>Epyx</publisher>
+        <genres>
+            <genre>Puzzle</genre>
+            <genre>Platform</genre>
+		</genres>
+		<year>1984</year>
+		<price>2.99</price>
+        <description>You play a secret agent on a quest to stop the evil Professor Elvin Atombender, who is believed to be tampering with national security computers. You must penetrate Atombender's stronghold, avoid his deadly robot creations, and acquire various pieces of a password to use in the main control room. The robots, rooms, and puzzle pieces will be switched around when starting over which provides replay value.</description>
+        <picture>images/impossible-mission.jpg</picture>
+	</game>
+    <game category="commodore-64">
+		<title lang="en">International Karate</title>
+		<develloper>System 3 Software Ltd.</develloper>
+		<publisher>System 3 Software Ltd.</publisher>
+        <genres>
+            <genre>Fighting </genre>
+		</genres>
+		<year>1986</year>
+		<price>2.99</price>
+        <description>'..AND YOU THOUGHT YOU'D SEEN A KARATE GAME.' Are you ready to experience the action, thrills and spills of the greatest Karate simulation ever? Become a master of 16 different true-to-life Karate moves, develop lightning reflexes and seek out opponents' weaknesses. Fight your way around the world in international locations including Sydney, New York and Mount Fuji. Pass extreme tests of skill breaking slates and dodging weapons, to see if you are a worthy opponent for the higher levels. Strike and counter-strike from white to black belt as your opponents become harder to defeat. Play against the expertise of the computer or other aspiring masters of Karate</description>
+        <picture>images/international-karate.jpg</picture>
+	</game>
+</gamecollection>

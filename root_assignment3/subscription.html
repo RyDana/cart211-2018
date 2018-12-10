@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Subscription Service</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="css/style-subscription.css">
+</head>
+<body onload="onLoad()">
+    <!-- Navbar-->
+    <div class="nav">
+      <div class="bar">
+        <a href="#home" onClick="goHome()" class="bar-item title">
+        <img src="https://media.nintendo.com/share/nclood/stable/en-us/bundles/../modules/nav/images/logo-nintendo.svg" alt="Nintendo"><br><p>ONLINE</p></a>
+
+        <a href="#sign-in" class="bar-item sign-in" id='signUpTop' onClick='showAccount()'>Sign up</a>
+        <!-- Right-sided navbar links hidden on small screens -->
+        <div class="right hide">
+          <a href="#features-container" id='featuresMenu' class="bar-item" >Features</a>
+          <a href="#pricing-container" id='pricingMenu' class="bar-item">Pricing</a>
+          <a href="#allGames" id='gamessMenu' class="bar-item" onClick='listAllGames()'>All Games</a>
+        </div>
+        <form class="search hide" action="">
+          <input type="text" placeholder="Search games.." name="search" maxlength="30" id='query'>
+          <button type="button" onClick='searchGames()'><i class="fa fa-search"></i></button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Header-->
+    <section id='header-container'>
+        <div id="header-spacer"></div>
+        <header id="header">
+          <div class="header-content">
+            <h2>More Games. More Features. More Fun.</h2>
+            <img src="./assets/images/nintendo-logo-red.png" alt="nintendo logo">
+            <h1>ONLINE</h1>
+            <a href="#sign-up" class="sign-up" id='sign-up' onClick='showAccount()'>Sign up now!</a>
+          </div>
+        </header>
+    </section>
+
+    <!-- Features grid -->
+    <section class="features features-icons text-center" id='features-container'>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <h2 class="section-heading text-uppercase ">Features</h2>
+            <h3 class="section-subheading">Look at all you can do!</h3>
+          </div>
+        </div>
+        <div class="row row-of-features" >
+          <div class="col-lg col-sm-6">
+            <div class="mx-auto mb-5 mb-lg-0 mb-lg-3">
+                <img src="./assets/images/online-play-header.png" alt="online play">
+              <h3>Play Online!</h3>
+            </div>
+          </div>
+          <div class="col-lg col-sm-6">
+            <div class="mx-auto mb-5 mb-lg-0 mb-lg-3">
+             <img src="./assets/images/nes-header.png" alt="Nes">
+              <h3>Play Retro Games!</h3>
+            </div>
+          </div>
+        <div class="col-lg col-sm-6">
+            <div class="mx-auto mb-5 mb-lg-0 mb-lg-3">
+             <img src="./assets/images/save-cloud-data-header.png" alt="cloud">
+              <h3>Save Data on the Cloud!</h3>
+            </div>
+          </div>
+        <div class="col-lg col-sm-6">
+            <div class="mx-auto mb-5 mb-lg-0 mb-lg-3">
+             <img src="./assets/images/app-header.png" alt="Toad with a smarphone">
+              <h3>Try the Smartphone App!</h3>
+            </div>
+          </div>
+        <div class="col-lg-2 col-sm-6">
+            <div class="mx-auto mb-5 mb-lg-0 mb-lg-3">
+             <img src="./assets/images/special-offers-header.png" alt="brick">
+              <h3>Special Surprises!</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!--Pricing table-->
+    <section class="text-center" id='pricing-container'>
+        <div class="row">
+          <div class="col-lg-12">
+            <h2 class="section-heading text-uppercase ">Plans</h2>
+          </div>
+        </div>
+        <table class="table">
+          <thead class="">
+            <tr>
+              <th scope="col" colspan="3">
+                <h3 class="section-subheading text-uppercase ">Individual Membership</h3>
+                <h6 class="section-subheading">For one Nintendo Account holder</h6>
+              </th>
+              <th scope="col"> 
+                <h3 class="section-subheading text-uppercase ">Family Membership</h3>
+                <h6 class="section-subheading">For up to 8 Nintendo Account holders</h6>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              
+              <td>1 Month</td>
+              <td>3 Months</td>
+              <td>12 Months</td>
+              <td>12 Months</td>
+
+            </tr>
+            <tr>
+              <td><h3>$3.99</h3>USD</td>
+              <td><h3>$7.99</h3>USD</td>
+              <td><h3>$19.99</h3>USD</td>
+              <td><h3>$34.99</h3>USD</td>
+
+            </tr>
+            <tr class='text-danger'>
+              <td></td>
+              <td>You save $3.98</td>
+              <td>You save $27.89</td>
+              <td></td>
+            </tr>
+            <tr>
+              
+              <td>
+                  <a href="#buy" class="buy" onClick='showAccount()'>Buy now!</a>
+              </td>
+              <td>
+                  <a href="#buy" class="buy" onClick='showAccount()'>Buy now!</a>
+              </td>
+              <td>
+                  <a href="#buy" class="buy" onClick='showAccount()'>Buy now!</a>
+              </td>
+                <td>
+                  <a href="#buy" class="buy" onClick='showAccount()'>Buy now!</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+    </section>
+    
+
+ 
+
+
+
+    <!-- videogames container -->
+    <div id="vg-container" class="row"></div>
+
+
+
+
+    <!--New Account Modal -->
+        <div class="modal fade" id="newAccountModal" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header" style="padding: 20px 50px;">
+                        <h4 class ="text-center">About you</h4>
+                    </div>
+                    <div class="modal-body" style="padding:25px 50px;">
+                        <form role="form">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="fname">Family Name</label>
+                                <input type="text" class="form-control" id="fname" placeholder="Family Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="address">Address</label>
+                                <input type="text" class="form-control" id="address" placeholder="123 Napoleon, Chambly">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="text" class="form-control" id="email" placeholder="example@email.com">
+                            </div>
+                                <div class="form-group">
+                                <label for="telephone">Telephone</label>
+                                <input type="text" class="form-control" id="telephone" placeholder="123-123-1234">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-success btn-block" onclick="submitAccount()">Submit</button>
+                        <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Current Account Modal -->
+        <div class="modal fade" id="currentAccountModal" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header" style="padding: 35px 50px;">
+                        <h4 class ="text-center">Profile details</h4>
+                    </div>
+                    <div class="modal-body" style="padding:40px 50px;">
+                        <h4>Name</h4>
+                        <p id = "currentAccountName"></p>
+                        <h4>Family Name</h4>
+                        <p id = "currentAccountFamName"></p>
+                        <h4>Address</h4>
+                        <p id = "currentAccountAddress"></p>
+                        <h4>Email</h4>
+                        <p id = "currentAccountEmail"></p>
+                        <h4>Telephone</h4>
+                        <p id = "currentAccountTelephone"></p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-success btn-block" onclick="disconnectAccount()">Clear profile</button>
+                        <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!--Choose subscription modal-->
+        <div class="modal fade" id="chooseSubscriptionModal" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header" style="padding: 35px 50px;">
+                        <h4 class ="text-center">Choose your subscription</h4>
+                    </div>
+                    <div class="modal-body" style="padding:40px 50px;">
+
+                       <div class='border rounded' id='3' onClick="chooseSubscription(3)" style="padding:10px;">
+                           <h4 class='col-10'>1 Month</h4>
+                           <h4 class='col-1'>$3.99</h4>
+                       </div>
+                       
+                       <div class='border rounded' id='799' 
+                        onClick="chooseSubscription(799)" style="padding:10px;">
+                           <h4 class='col-10'>3 Months</h4>
+                           <h4 class='col-1'>$7.99</h4>
+                       </div>
+                       
+                       <div class='border rounded' id='1999'
+                        onClick="chooseSubscription(1999)"  style="padding:10px;">
+                           <h4 class='col-10'>12 Months</h4>
+                           <h4 class='col-1'>$19.99</h4>
+                       </div>
+                       
+                       <div class='border rounded' id='3499'
+                        onClick="chooseSubscription(3499)"  style="padding:10px;">
+                           <h4 class='col-10'>12 Months (Family)</h4>
+                           <h4 class='col-1'>$34.99</h4>
+                       </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-success btn-block" onclick="showCookieClicker()">Choose subscription</button>
+                        <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!--cookie clicker modal-->
+        <div class="modal fade" id="cookieClickerModal" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header bg-primary" style="padding: 35px 50px;">
+                       <div class='row'>
+                           <h4 class ="text-center">Payement</h4>
+                        </div>
+                    </div>
+                    <div class="modal-body" style="padding:40px 50px;">
+                       
+                        <div >
+                            <p class ="text-center">You won't have to pay  real money. Click on the cookie to pay 1&#162; towards your subscription</p>
+                        </div>
+
+                       <div class='border rounded' style="padding:10px;">
+                           <h6 class='col-10'>Cents accumulated:</h6>
+                           <p class='col-1' id='centsAccumulated'></p>
+                       </div>
+                       
+                        <div class='border rounded' style="padding:10px;">
+                           <h6 class='col-10'>Cents remaining:</h6>
+                           <p class='col-1' id='centsRemaining'></p>
+                       </div>
+                       
+                       <img src="http://t1.rbxcdn.com/8327deceb49ed5e80cd92aa79589b0da" id='cookie' alt="cookie"  onClick="cookieClicker()">
+
+                    </div>
+                    
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+        <div class="container">
+            <p class="m-0 text-center text-white">Copyright &copy; Dana Ryashy (40101203) 2018</p>
+        </div>
+    </footer>
+    
+    <!-- Bootstrap core JavaScript -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+   
+   <!--custom JavaScript-->
+        <script src="js/js.js"></script>
+    
+</body>
+</html>
