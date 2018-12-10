@@ -135,7 +135,7 @@ function createGameList(gameList,query){
     section.innerHTML = html;
     
     var resultTitle = document.createElement('h3');
-    resultTitle.className="col-4 mx-auto";
+    resultTitle.className="col-9 mx-auto";
     resultTitle.appendChild(document.createTextNode("Here are the results for \"" + query + "\"."));
     section.appendChild(resultTitle);
     
