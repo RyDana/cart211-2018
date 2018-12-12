@@ -1,3 +1,4 @@
+
 //FUNCTIONS RELATED TO VIDEOGAME DISPLAY
 
 //Ajax call to xml data file
@@ -16,11 +17,17 @@ function listAllGames(){
 }
 
 //lists all games on webpage
-function listAllGamesHTML(gameList){
+function listAllGamesHTML(gameList){ 
     var html = "";
     var tabGames = gameList.getElementsByTagName('game');
     var section = document.getElementById('vg-container');
     section.innerHTML = html;
+    
+    var resultTitle = document.createElement('h2');
+    resultTitle.className="col-9 mx-auto";
+    resultTitle.appendChild(document.createTextNode("Here are all our games"));
+    section.appendChild(resultTitle);
+    
     for (var i = 0; i < tabGames.length; i++){
         var aGame = tabGames[i];
         section.appendChild(listGames(aGame));
@@ -29,6 +36,9 @@ function listAllGamesHTML(gameList){
 
 //displays one card of one game
 function listGames(aGame){
+    document.getElementById("search-container").style.display = 'block';
+    document.getElementById('master-container').style.display = 'none';
+    
     var year = aGame.getElementsByTagName('year')[0].firstChild.nodeValue;
     var title=aGame.getElementsByTagName('title')[0].firstChild.nodeValue;
     var tabGenre=aGame.getElementsByTagName('genre');
@@ -43,7 +53,7 @@ function listGames(aGame){
     var picture = aGame.getElementsByTagName('picture')[0].firstChild.nodeValue;
     
     var gameBox = document.createElement('div');
-    gameBox.className = "row col-9 mx-auto m-4";
+    gameBox.className = "row col-9 mx-auto m-1";
     
     var gameImgCont = document.createElement('div');
     gameImgCont.className = "col-4";
@@ -84,8 +94,12 @@ function listGames(aGame){
 //    gameDescription.className = "card-text";
     gameDescription.appendChild(document.createTextNode(description));
     
+    var ifAvailabe = document.createElement('p');
+    ifAvailabe.className = "text-danger";
+    ifAvailabe.appendChild(document.createTextNode("This game is copyrighted and not available to play"));
+    
     var playBtn = document.createElement('button');
-    playBtn.className = "btn btn-primary";
+    playBtn.className = "btn btn-primary disabled";
     //TODO: create function for this button
     //addCartBtn.addEventListener('click', something);
     playBtn.appendChild(document.createTextNode("Play!"));
@@ -96,6 +110,7 @@ function listGames(aGame){
     cardBody.appendChild(gameGenre);
     cardBody.appendChild(gameDevelloper);
     cardBody.appendChild(gameDescription);
+    cardBody.appendChild(ifAvailabe);
     cardBody.appendChild(playBtn);
     
     gameBox.appendChild(gameImgCont);
@@ -115,12 +130,26 @@ function searchGames(queryId){
     type:'GET',
     dataType:'xml',
     success : function(games){
-        document.getElementById('master-container').style.display = 'none';
         if(query.length > 2){
             createGameList(games,query);
         } else{
             listAllGamesHTML(games);
         }
+    },
+    fail : function(err){
+        alert("Oups!!! Problem");
+    }
+   });  
+}
+
+function searchCategories(category){
+    $.ajax({
+    url:'data/gamecollection.xml',
+    type:'GET',
+    dataType:'xml',
+    success : function(games){
+        document.getElementById('master-container').style.display = 'none';
+        createGameList(games,category);
     },
     fail : function(err){
         alert("Oups!!! Problem");
@@ -144,6 +173,7 @@ function createGameList(gameList,query){
         var category = aGame.getAttribute('category');
         var gameInfo = category + ' ';
         gameInfo+=aGame.getElementsByTagName('title')[0].firstChild.nodeValue + " ";
+        gameInfo += aGame.getElementsByTagName('year')[0].firstChild.nodeValue + " ";
         var tabGenre = aGame.getElementsByTagName('genre');
         gameInfo += tabGenre[0].firstChild.nodeValue;
         if(tabGenre.length > 1){

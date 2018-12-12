@@ -13,60 +13,166 @@
     
 </head>
 <body>
-      
-    <div class='row bg-warning '>
-        <p class='bg-warning col-10 p-3'>Dear Supporter,<br>
-I ask only once a year: please help the VGArchive today. Most can’t afford to give, but we hope you can. The average donation is $45.<span class='bg-dark text-light'>If everyone chips in $5, we can end this fundraiser today. Right now, a generous supporter will match your donation, so you can double your impact.</span>  All we need is the price of a paperback book to sustain a library you can trust. We’re dedicated to reader privacy so we never track you. We never accept ads. But we still need to pay for servers and staff. For 22 years, my dream has been to build the library of retro videogames and make it available to everyone. To make games more reliable and permanent. I know we could charge money, but then we couldn’t achieve our mission: a free archive for the whole internet. The Internet Archive is a bargain, but we need your help. If you find our site useful, please chip in. Thank you.<br>
-—Founder of VGArchive</p>
-   <img class='col-2' id='paypalImg' src="assets/images/paypal.JPG" alt="paypal">
-    </div>
-       <!-- Navigation -->
-    <nav class="navbar navbar-light bg-dark">
-      <div class="container">
-        <a class="navbar-brand text-primary" href="#">VGArchive</a>
-        <form class="search form-inline" action="">
-          <input type="text" id='query1' class="form-control" placeholder="Search games.." name="search" maxlength="30" id='query'>
-          <button type="button" onClick="searchGames('query1')" class="btn btn-primary">Search!</button>
-        </form>
-<!--        <a class="btn btn-primary" href="#">Sign In</a>-->
-      </div>
-    </nav>
-<!--
-    <div id='wrapper'>
-       Sidebar 
-      <ul class="sidebar col-2 navbar-nav bg-light">
-        <li class="nav-item active">
-            <ul>NES</ul>
-            <ul>SNES</ul>
-            <ul>GAMEBOY-COLOR</ul>
-            <ul>COMMODORE-64</ul>
-            <ul>PLAYSTATION</ul>
-            <ul>XBOX</ul>
-        </li>
-        <li class="nav-item">
-        </li>
-        <li class="nav-item">
-        </li>
-        <li class="nav-item">
-        </li>
-      </ul>
--->
-    
-           
-<!--
-         Page Content 
-    <div id="content-wrapper">
-        <div class="container-fluid">
--->
-                <!-- Masthead -->
+     
+     <div class="wrapper">
+
+        <!-- Sidebar -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+               <img src="assets/images/archive_logo.png" alt="logo">
+                <h2 class="" >VGArchive</h2>
+            </div>
+
+            <ul class="list-unstyled components">
+                <p>Game categories</p>
+                <li class="">
+                    <a href="#consoleSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Consoles</a>
+                    <ul class="collapse list-unstyled" id="consoleSubmenu">
+                        <li>
+                            <a href="#" onClick="searchCategories('commodore-64')">Commodore-64</a>
+                        </li>
+                        <li>
+                            <a href="#" onClick="searchCategories('nes')">NES</a>
+                        </li>
+                        <li>
+                            <a href="#" onClick="searchCategories('snes')">SNES</a>
+                        </li>
+                        <li>
+                            <a href="#" onClick="searchCategories('gameboy-color')">Gameboy Color</a>
+                        </li>
+                        <li>
+                            <a href="#" onClick="searchCategories('atari-2600')">Atari 2600</a>
+                        </li>
+                        <li>
+                            <a href="#" onClick="searchCategories('sega-dreamcast')">Sega Dreamcast</a>
+                        </li>
+                        <li>
+                            <a href="#" onClick="searchCategories('playstation')">Playstation</a>
+                        </li>
+                        <li>
+                            <a href="#" onClick="searchCategories('playstation-portable')">Playstation portable</a>
+                        </li>
+                        <li>
+                            <a href="#" onClick="searchCategories('xbox')">Xbox</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#genreSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Genres</a>
+                    <ul class="collapse list-unstyled" id="genreSubmenu">
+                        <li>
+                            <a href="#" onClick="searchCategories('platform')">Platform</a>
+                        </li>
+                        <li>
+                            <a href="#" onClick="searchCategories('action')">Action</a>
+                        </li>
+                        <li>
+                            <a href="#" onClick="searchCategories('adventure')">Adventure</a>
+                        </li>
+                        <li>
+                            <a href="#" onClick="searchCategories('role-playing')">Role-Playing</a>
+                        </li>
+                        <li>
+                            <a href="#" onClick="searchCategories('shooter')">Shooter</a>
+                        </li>
+                        <li>
+                            <a href="#" onClick="searchCategories('sports')">Sports</a>
+                        </li>
+                        <li>
+                            <a href="#" onClick="searchCategories('puzzle')">Puzzle</a>
+                        </li>
+                        <li>
+                            <a href="#" onClick="searchCategories('fighting')">Fighting</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#yearSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Release Year</a>
+                    <ul class="collapse list-unstyled" id="yearSubmenu">
+                        <li>
+                            <a href="#" onClick="searchCategories('197')">70's</a>
+                        </li>
+                        <li>
+                            <a href="#" onClick="searchCategories('198')">80's</a>
+                        </li>
+                        <li>
+                            <a href="#" onClick="searchCategories('199')">90's</a>
+                        </li>
+                        <li>
+                            <a href="#" onClick="searchCategories('200')">00's</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" onClick="listAllGames()">All games</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Page Content -->
+        <div id="content">
+            <div class='paypalDiv row bg-warning'>
+              <p class='bg-warning col-9 m-3'>Dear Supporter,<br>I ask only once a year: please help the VGArchive today. Most can’t afford to give, but we hope you can. The average donation is $45.<span class='bg-dark text-light'>If everyone chips in $5, we can end this fundraiser today. Right now, a generous supporter will match your donation, so you can double your impact.</span>  All we need is the price of a paperback book to sustain a library you can trust. We’re dedicated to reader privacy so we never track you. We never accept ads. But we still need to pay for servers and staff. For 22 years, my dream has been to build the library of retro videogames and make it available to everyone. To make games more reliable and permanent. I know we could charge money, but then we couldn’t achieve our mission: a free archive for the whole internet. The Internet Archive is a bargain, but we need your help. If you find our site useful, please chip in. Thank you.<br>—Founder of VGArchive</p>
+              <img class='col-2' id='paypalImg' src="assets/images/paypal.JPG" alt="paypal">
+            </div>
+            
+            
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Search</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Topics</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </nav>
+
+            
+            <!-- Masthead -->
             <header class="masthead text-center" id='master-container'>
               <div class="container">
                 <div class="row">
                   <div class="col-9 mx-auto">
-                   <h1 class="mb-5 text-primary">VGArchive</h1>
-                    <h2 class="mb-5 text-secondary">Find and loan thousands of retro video games!</h2>
+                      <img src="assets/images/archive_logo.png" alt="logo">
+                      <h1 class="mb-5">VGArchive</h1>
+                      <h2 class="mb-5 text-secondary">Find and play thousands of retro video games!</h2>
                   </div>
                   <div class="col-7 mx-auto">
+                    <form>
+                      <div class="form-row">
+                        <div class="col-9">
+                          <input type="text" id='query1' class="form-control form-control-lg" placeholder="Search games...">
+                        </div>
+                        <div class="col-3">
+                          <button type="button" class="btn btn-block btn-lg btn-primary" onClick="searchGames('query1')">Search!</button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </header>
+            
+            <!-- head -->
+            <header class="head" id='search-container'>
+              <div class="container">
+                <div class="row">
+                  <div class="col-9">
+                    <h2 class="text-secondary">Search for more video-games</h2>
+                  </div>
+                  <div class="col-7 ">
                     <form>
                       <div class="form-row">
                         <div class="col-9">
@@ -80,18 +186,17 @@ I ask only once a year: please help the VGArchive today. Most can’t afford to 
                   </div>
                 </div>
               </div>
-            </header>
+            </header> 
 
 
 
             <!-- videogames container -->
             <div id="vg-container" class="row"></div>
-<!--
+            
         </div>
-    </div>
-    </div>
--->
 
+    </div>
+     
 
     
     <!-- Bootstrap core JavaScript -->
@@ -101,6 +206,7 @@ I ask only once a year: please help the VGArchive today. Most can’t afford to 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    
     
     <!--custom JavaScript-->
     <script src="js/js-archive.js"></script>

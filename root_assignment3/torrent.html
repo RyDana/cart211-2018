@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Torrent site</title>
+    <link rel="stylesheet" href="css/style-torrent.css">
+</head>
+<body>
+    <div id='homepageSection' style=''>
+       <img src="assets/images/torent_logo.png" alt="logo">
+        <nav id="navlinks"><strong>Search Torrents</strong> |
+            <a href="#" >Browse Torrents</a> |
+            <a href="#" >Recent Torrents</a> |
+            <a href="#" >TV shows</a> |
+            <a href="#" >Music</a> |
+            <a href="#" >Top 100</a>
+        </nav>
+        <form id='homePageSearch'name="search" action="#">
+            <div id="input">
+                <input name="text" id='query1' type="search" placeholder="Torry Search" autofocus required>
+            </div>
+            <div id="categories">
+                <label title="All" >
+                    <input type="checkbox" disabled>All
+                </label>
+                <label title="Audio">
+                    <input type="checkbox" disabled>Audio
+                </label>
+                <label title="Video" >
+                    <input type="checkbox" disabled>Video
+                </label>
+                <label title="Applications">
+                    <input type="checkbox" disabled>Applications
+                </label>
+                <label title="Games" >
+                    <input type="checkbox" checked>Games</label>
+                <label title="Porn" >
+                    <input type="checkbox" disabled>Porn
+                </label>
+                <label title="Other">
+                    <input type="checkbox" disabled>Other
+                </label>
+            </div>
+            <div id="submit">
+                <input type="button" title="Torry Search" value="Torry Search" onClick="searchGames('query1')">
+                <input type="submit" title="I'm Feeling Lucky" name="lucky" value="I'm Feeling Lucky">
+            </div>
+        </form>
+    </div>
+    
+    <div id='resultpage' style='display: none;'>
+        <div id='topSearchSection' >
+           <img src="assets/images/torent_logo.png" alt="logo">
+           <div>
+            <nav id="navlinks"><strong>Search Torrents</strong> |
+                <a href="#" >Browse Torrents</a> |
+                <a href="#" >Recent Torrents</a> |
+                <a href="#" >TV shows</a> |
+                <a href="#" >Music</a> |
+                <a href="#" >Top 100</a>
+            </nav>
+            <form id='search'name="search" action="#">
+                <div id="input">
+                    <input id='query2' name="search" type="search" placeholder="Pirate Search" >
+                </div>
+                <div id="categories">
+                    <label title="All" >
+                        <input type="checkbox" disabled>All
+                    </label>
+                    <label title="Audio">
+                        <input type="checkbox" disabled>Audio
+                    </label>
+                    <label title="Video" >
+                        <input type="checkbox" disabled>Video
+                    </label>
+                    <label title="Applications">
+                        <input type="checkbox" disabled>Applications
+                    </label>
+                    <label title="Games" >
+                        <input type="checkbox" checked>Games</label>
+                    <label title="Porn" >
+                        <input type="checkbox" disabled>Porn
+                    </label>
+                    <label title="Other">
+                        <input type="checkbox" disabled>Other
+                    </label>
+                </div>
+                <div id="submit">
+                    <input type="button" title="Torry Search" value="Torry Search" onClick = "searchGames('query2')">
+                    <input type="button" title="I'm Feeling Lucky" name="lucky" value="I'm Feeling Lucky">
+                </div>
+            </form>
+            </div>
+        </div>
+        
+        <div id='separator'></div>
+        
+        <div >
+             <table id='resultsTable'>
+              <tr>
+                <th>Type</th>
+                <th>Name</th> 
+                <th>SE</th>
+                <th>LE</th>
+              </tr>
+              <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+                <td>50</td>
+              </tr>
+              <tr>
+                <td>Eve</td>
+                <td>Jackson</td>
+                <td>94</td>
+                <td>94</td>
+              </tr>
+              <tr>
+                <td>John</td>
+                <td>Doe</td>
+                <td>80</td>
+                <td>80</td>
+              </tr>
+            </table>
+        </div>
+    </div>
+    
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+    <!--custom JavaScript-->
+    <script src="js/js-torrent.js"></script>
+    
+</body>
+</html>
